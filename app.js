@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var sampledataRouter = require('./routes/student');
+var sampledataRouterG = require('./routes/group');
 
 var app = express();
 
@@ -16,6 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use('/student', sampledataRouter);
+app.use('/group',sampledataRouterG);
 
 app.use(logger('dev'));
 app.use(express.json());
