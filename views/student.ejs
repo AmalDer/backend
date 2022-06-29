@@ -16,6 +16,81 @@
             
             <% if(action == 'add') { %>
 
+                <div class="card">
+                    <div class="card-header">Formulaire d'ajout d'étudiant dans un groupe</div>
+                    <div class="card-body">
+                        <form method="POST" action="/student/addstudent">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>ID</label>
+                                        <input type="number" name="idstudent" id="idstudent" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>ID2</label>
+                                        <input type="number" name="iduser" id="iduser" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>IDGroup</label>
+                                        <input type="number" name="idgroup" id="idgroup" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Niveau</label>
+                                        <select name="niveau" class="form-control">
+                                            <option value="pa">1A</option>
+                                            <option value="da">2A</option>
+                                            <option value="ta">3A</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Nom</label>
+                                        <input type="text" name="nom" id="nom" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Prénom</label>
+                                        <input type="text" name="prenom" id="prenom" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Email</label>
+                                        <input type="text" name="email" id="email" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Génie</label>
+                                        <select name="genie" class="form-control">
+                                            <option value="info">Informatique</option>
+                                            <option value="meca">Mécanique</option>
+                                            <option value="indus">Industriel</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="submit" name="submit_button" class="btn btn-primary" value="Add" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             <% } else { %>
                 
             <div class="card">

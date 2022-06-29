@@ -22,10 +22,5 @@ router.get("/", function(request, response, next){
 	});
 
 });
-router.get("/add", function(request, response, next){
-
-	response.render("group", {title:'Insert Data into MySQL', action:'add'});
-
-});
 
 module.exports = router;
