@@ -6,7 +6,7 @@ var database = require('../database');
 
 router.get("/", function(request, response, next){
 
-	var query = "SELECT * FROM student ORDER BY id DESC";
+	var query = "SELECT * FROM student ORDER BY idstudent ASC";
 
 	database.query(query, function(error, data){
 
@@ -26,7 +26,7 @@ router.get("/", function(request, response, next){
 //to add the group created to the database
 router.get("/add", function(request, response, next){
 
-	response.render("group", {title:'Insert Data into MySQL', action:'add'});
+	response.render("student", {title:'Insert Data into MySQL', action:'add'});
 
 });
 

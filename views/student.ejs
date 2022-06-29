@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            <h1 class="text-center mt-3 mb-3">Groups management</h1>
             
             <% if(action == 'add') { %>
 
@@ -29,11 +29,13 @@
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <tr>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Age</th>
-                                <th>Gender</th>
-                                <th>Action</th>
+                                <th>ID</th>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>Email</th>
+                                <th>Group ID</th>
+                                <th>Niveau</th>
+                                <th>Genie</th>
                             </tr>
                             <%
                             if(studentData.length > 0)
@@ -41,11 +43,13 @@
                                 studentData.forEach(function(data){
                             %>
                             <tr>
-                                <td><%= data.first_name %></td>
-                                <td><%= data.last_name %></td>
-                                <td><%= data.age %></td>
-                                <td><%= data.gender %></td>
-                                <td></td>
+                                <td><%= data.idstudent %></td>
+                                <td><%= data.nom %></td>
+                                <td><%= data.prenom %></td>
+                                <td><%= data.email %></td>
+                                <td><%= data.idgroup %></td>
+                                <td><%= data.niveau %></td>
+                                <td><%= data.genie %></td>
                             </tr>
                             <%
                                 });
