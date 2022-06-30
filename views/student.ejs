@@ -19,7 +19,7 @@
                 <div class="card">
                     <div class="card-header">Formulaire d'ajout d'étudiant dans un groupe</div>
                     <div class="card-body">
-                        <form method="POST" action="/student/addstudent">
+                        <form method="POST" action="/student/add_student">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
@@ -28,7 +28,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="mb-3">
+                                 <div class="mb-3">
                                         <label>ID2</label>
                                         <input type="number" name="iduser" id="iduser" class="form-control" />
                                     </div>
@@ -45,9 +45,9 @@
                                     <div class="mb-3">
                                         <label>Niveau</label>
                                         <select name="niveau" class="form-control">
-                                            <option value="pa">1A</option>
-                                            <option value="da">2A</option>
-                                            <option value="ta">3A</option>
+                                            <option value="1A">1A</option>
+                                            <option value="2A">2A</option>
+                                            <option value="3A">3A</option>
                                         </select>
                                     </div>
                                 </div>
@@ -77,15 +77,15 @@
                                     <div class="mb-3">
                                         <label>Génie</label>
                                         <select name="genie" class="form-control">
-                                            <option value="info">Informatique</option>
-                                            <option value="meca">Mécanique</option>
-                                            <option value="indus">Industriel</option>
+                                            <option value="Informatique">Informatique</option>
+                                            <option value="Mecanique">Mécanique</option>
+                                            <option value="Industriel">Industriel</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <input type="submit" name="submit_button" class="btn btn-primary" value="Add" />
+                                <input type="submit" name="submit_button" class="btn btn-primary" value="add" />
                             </div>
                         </form>
                     </div>
